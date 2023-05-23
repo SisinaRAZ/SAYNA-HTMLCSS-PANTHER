@@ -98,48 +98,6 @@ a {
     color: #fff;
 }
 
-/* Bordure sur le côté gauche */
-.statics {
-    position: sticky;
-    top: 0px;
-    margin-top: -150px;
-    margin-left: 20px;
-    writing-mode: vertical-lr;
-    overflow: hidden;
-    height: 350px;
-    cursor: pointer;
-}
-
-#border1 {
-    border: 2px solid var(--Violet-color);
-}
-
-#border2 {
-    color: var(--Violet-color);
-    border: 2px solid var(--Violet-color);
-    margin-top: -10px;
-    margin-left: 8px;
-    float: left;
-    height: 60%;
-}
-
-.icons_fitt {
-    margin-top: 10px;
-    margin-left: 10px;
-    height: 340px;
-    text-align: end;
-}
-
-.icons_fitt img {
-    width: 20px;
-    margin-top: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.icons_fitt img:hover {
-    filter: invert(0%) sepia(100%) saturate(0);
-}
-
 /* Header */
 nav .logo_header img {
     width: 100px;
@@ -186,206 +144,172 @@ header nav {
 }
 
 /* Main */
-/* Première section */
-.hero_flex {
-    display: flex;
-    align-items: center;
-    margin-left: 2%;
-}
-
-.hero_image img {
-    width: 810px;
-    height: 600px;
-    margin: auto;
-}
-
-.container0 {
-    width: 95%;
-    float: right;
-    margin-top: -15em;
-}
-
-/* Deuxième section */
-.slider {
+/* Section  */
+.hero-enigme {
     width: 90%;
-    display: flex;
-    margin-left: 10%;
-    background-color: var(--Bleu3-color);
+    background-image: url("../Illustrations/Enigme/Pantherenigme1.png");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: -10em;
 }
 
-.slider-text {
-    margin-top: 20px;
-    padding: 1em;
-}
-
-.slider-text p {
-    text-align: justify;
+.div-hero {
+    width: 30%;
     height: auto;
-    overflow: auto;
+    color: white;
+    padding-left: 13%;
+    padding-top: 10%;
 }
 
-
-#killmonger {
-    position: relative;
-    margin-bottom: -70px;
-    align-items: center;
+.div-hero-enigme {
+    float: right;
+    width: 35%;
+    height: auto;
+    color: white;
+    padding-top: 25%;
+    margin-right: 5em;
 }
 
-#killmonger img {
-    width: auto;
-    height: 20em;
-    margin-top: -2em;
-    margin-left: 1.5em;
+.div-hero-enigme h1{
+    font-family: "BEYNO";
+    color: var(--Violet-color);
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-align: justify;
+    padding: 5px;
 }
 
-.slider-img {
-    width: auto;
-    height: 250px;
+.hero-text-enigme {
+    margin-top: 40px;
+    width: 30%;
+    text-align: justify;    
+    margin-top: 200px;
+    margin-left: 300px;
 }
 
-#fleche {
-    width: 200px;
+.hero-text-enigme p{
+    margin-top: 20px;
+}
+
+.hero-text-enigme, .div-hero-enigme #hero-img1 {    
     position: absolute;
-    right: -80px;
-    top: 41em;
-    cursor: pointer;
-}
-
-/* Troisième section */
-.bio {
-    display: grid;
-    width: 80%;
-    margin: 10% auto;
-    grid-template-columns: 2fr 1fr;
-    gap: 10%;
-}
-
-.bio-gauche {
-    text-align: justify;
-}
-
-.bio-droite div {
-    background-color: rgba(255, 255, 255, 0.863);
-    font-family: "Cantarell";
-    border-radius: 5px;
-    text-align: justify;
-    width: 365px;
-    height: 520px;
-    padding: 50px;
-    margin-top: 12em;
-    padding-bottom: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* CopyRight SisinaRaz */
 
-.bio-droite label {
-    display: block;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-align: center;
+.div-hero-enigme #hero-img1 {
+    width: 600px;
+}
+
+.div-hero-enigme #hero-img2 {
+    width: 700px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+#text-enigme {
+    width: 70%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-areas: 
+        "text text"
+        "alpha paragraphe";
+    gap: 1em;
+    margin-bottom: 100px;
+}
+
+#text-enigme h3{
+    grid-area: text;
+    font-family: "WakandaForever";
+    letter-spacing: 7px;
     line-height: 30px;
+    margin-bottom: 2em;
 }
 
-#bio-photo1 {
-    width: 300px;
-    height: auto;
-    float: inline-start;
-    position: relative;
-    margin-top: -230px;
-    left: -15px;
+#text-enigme p .car {
+    font-family: "WakandaForever";
 }
 
-.bio-droite p {
-    color: var(--Bleu3-color);
-    line-height: 12px;
+#form {
+    margin-top: 150px;
 }
 
-.bio-droite span {
-    font-weight: bold;
+#text-enigme input {
+    width: 75%;
+    padding: 7px 7px 7px 25px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--Gray-color);
+    color: var(--Gray-color);
 }
 
-.bio-droite button {
-    display: inline-flex;
-    margin-left: 1.2em;
-    font-size: 10px;
-    padding: 8px;
-    margin-bottom: 20px;
-    color: white;
-    background-color: var(--Bleu1-color);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+#text-enigme input::placeholder {
+    font-size: 11px;
+    color: var(--Gray-color);
 }
 
-#bio-photo2 {
-    width: 300px;
-    height: auto;
-    margin: 8em 0em 0em 3em;
-}
-
-/* Quatrième section */
-.formulaire_content {
-    background-image: url(../Illustrations/Accueil/Pantherhome7.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact {
-    margin-top: 5em;
-    background-image: linear-gradient(0deg, #ffffff0a, #ffffff0a, #ffffff74, #fff);
-    width: 50%;
+#text-enigme #div-btn{
+    width: 75%;
     text-align: center;
-    padding: 40px;
-    border-radius: 100px;
 }
 
-.titre_1 {
+#text-enigme button{
+    width: 120px;
+    padding: 9px;
+    border-radius: 50px;
+    background-color: var(--Gray-color);
     font-size: 11px;
-    color: var(--Bleu3-color);
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+    border: none;
 }
 
-.titre_2 {
-    font-size: 30px;
-    color: var(--Bleu3-color);
-    margin-bottom: 1em;
+#text-enigme button:hover{
+    box-shadow: 0 0 20px var(--Gray-color);
 }
 
-input {
-    width: 520px;
-    margin: 5px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 38px;
-    border: 1px solid var(--Bleu3-color);
-    background-color: transparent;
+.question {
+    grid-area: paragraphe;
+    width: 30vw;
+    text-align: center;
+    margin-top: 5em;
+    margin-left: 5em;
 }
 
-textarea {
-    width: 520px;
-    padding: 10px 10px 10px 20px;
-    margin: 10px;
-    height: 12em;
-    border: 1px solid var(--Bleu3-color);
-    background-color: transparent;
-    border-radius: 15px;
+.question div, .question div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.question div p {
+    width: 100%;
 }
 
-.boutton_envoyer {
-    padding: 10px 20px 10px 20px;
-    border-radius: 38px;
-    border: 0px solid var(--Violet-color);
-    margin: 10px;
-    background-color: var(--White-color);
-    cursor: pointer;
-    font-size: 11px;
+.question div {
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
 }
 
-.btn {
-    color: var(--Bleu3-color);
+.question div img {
+    width: 550px;
+    margin-left: 15px;
 }
+
+.enigme-droite{
+    grid-area: alpha;
+}
+
 
 /* Footer */
 footer {
@@ -488,4 +412,3 @@ footer {
 }
 
 /* CopyRight SisinaRaz */
-
