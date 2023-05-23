@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "Panthera";
+    src: url("../font/PantheraRegular-MVZ9J.ttf");
+}
+
+@font-face {
+    font-family: "BEYNO";
+    src: url("../font/FontsFree-Net-BEYNO.ttf");
+}
+
+@font-face {
+    font-family: "WakandaForever";
+    src: url("../font/WakandaForever-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("../font/Cantarell-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White-color: #fff;
+    --Gray-color: #f2cef2;
+    --Violet-color: #9e91b7;
+    --Rose-color: #df99f2;
+    --Bleu1-color: #3d2da6;
+    --Bleu2-color: #07338c;
+    --Bleu3-color: #021740;
+}
+
+/* Général */
+body {
+    background-image: url("../Illustrations/Logo/arrière_plan.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-family: "Panthera";
+    font-size: 68px;
+    color: var(--Violet-color);
+}
+
+h2 {
+    font-family: "BEYNO";
+    font-size: 32px;
+    color: var(--Violet-color);
+}
+
+h3,
+h4 {
+    font-family: "Cantarell";
+    color: #3d2da6;
+}
+
+p {
+    font-family: "Cantarell";
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+a {
+    color: #fff;
+}
+
+.border {
+    margin-left: 3em;
+    border-left: 3px solid var(--Violet-color);
+    height: 15em;
+}
+
+/* Header */
+.logo_header a {
+    text-decoration: none;
+}
+
+.image {
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    height: 100px;
+    margin: auto;
+}
+
+.menu_header ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.menu_header ul li a {
+    text-decoration: none;
+    font-family: "BEYNO";
+    cursor: pointer;
+    padding: 1px;
+}
+
+.menu_header ul li a.active {
+    color: var(--Violet-color);
+    text-decoration-color: var(--Violet-color);
+    border-bottom: 2px solid;
+}
+
+.menu_header ul li a:hover {
+    border-bottom: 2px solid;
+    color: var(--White-color);
+}
+
+/* Responsive menu header */
+@media (max-width: 600px) {
+    .menu_header {
+        text-align: center;
+    }
+
+    .menu_header li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Main */
+/* Première section */
+.hero_flex {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.hero_image img {
+    width: 810px;
+    height: 600px;
+    margin: auto;
+}
+
+.container0 {
+    width: 95%;
+    float: right;
+    margin-top: -10em;
+}
+
+/* Deuxième section */
+
+.container1 {
+    display: flex;
+    width: 100%;
+    margin-left: 10%;
+    align-items: center;
+    height: 341px;
+    background-color: var(--Bleu3-color);
+}
+
+.description1 {
+    margin: 25px 25px 0px 0px;
+}
+
+.description2 {
+    margin: 25px 25px 100px 25px;
+    width: 400px;
+}
+
+.description3 {
+    margin: 25px 25px 100px 25px;
+    width: 400px;
+}
+
+/* Troisième section */
+.prince {
+    width: 80%;
+    margin: auto;
+    margin-top: 15em;
+}
+
+.prince_content {
+    display: flex;
+}
+
+.prince_card {
+    margin-left: 5em;
+}
+
+/* Quatrième section */
+.protecteur_content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.protecteur_text {
+    margin-top: 1em;
+    margin-right: 4em;
+}
+
+.protecteur_img {
+    margin-top: 6em;
+}
+
+.image_protecteur {
+    margin-right: -4em;
+    height: 25em;
+
+}
+
+/* Cinquième section */
+.formulaire_content {
+    background-image: url(../Illustrations/Accueil/Pantherhome7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    margin-top: 5em;
+    background-image: linear-gradient(0deg, #ffffff0a, #ffffff0a, #ffffff74, #fff);
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+    border-radius: 100px;
+}
+
+.titre_1 {
+    font-size: 11px;
+    color: var(--Bleu3-color);
+}
+
+.titre_2 {
+    font-size: 30px;
+    color: var(--Bleu3-color);
+    margin-bottom: 1em;
+}
+
+input {
+    width: 520px;
+    margin: 5px;
+    padding: 10px 10px 10px 20px;
+    border-radius: 38px;
+    border: 1px solid var(--Violet-color);
+}
+
+textarea {
+    width: 520px;
+    padding: 10px 10px 10px 20px;
+    margin: 10px;
+    height: 12em;
+    border: 1px solid var(--Violet-color);
+    border-radius: 15px;
+}
+
+.boutton_envoyer {
+    padding: 10px 20px 10px 20px;
+    border-radius: 38px;
+    border: 0px solid var(--Violet-color);
+    margin: 10px;
+    background-color: var(--White-color);
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.boutton_envoyer:hover {
+    /* box-shadow: 2px 2px 2px 2px #fff; */
+}
+
+.btn {
+    color: var(--Bleu3-color);
+}
+
+/* Footer */
+footer {
+    background-image: url(../Illustrations/Logo/back_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: space-between;
+
+}
